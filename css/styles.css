@@ -767,8 +767,24 @@ img {
 .close-icon {
 }
 
+.modal-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
 .is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+textarea {
+  resize: none;
 }
