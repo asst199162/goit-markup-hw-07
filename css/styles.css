@@ -97,6 +97,7 @@ img {
 .size-icon {
   width: 20px;
   height: 20px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .peculiarities-size-icon {
@@ -126,7 +127,7 @@ img {
   color: var(--studio-header-logo-color);
   padding-bottom: 25px;
   padding-top: 24px;
-  padding-right: 93px;
+  margin-right: 93px;
 }
 
 .navigation-container {
@@ -172,8 +173,9 @@ img {
   background-color: rgba(33, 150, 243, 1);
   position: absolute;
   display: block;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
+  border-radius: 2px;
 }
 
 .site-nav-link,
@@ -639,7 +641,8 @@ img {
   border: 0px;
   padding: 6px 22px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-btn-item:not(:last-child) {
@@ -663,6 +666,12 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
+}
+
+.portfolio-item-img:hover,
+.portfolio-item-img:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-item-img:nth-child(3n) {
@@ -725,12 +734,13 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
-  transition: opacity 1000ms, visibility 1000ms;
+  transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden .modal {
   transform: translateX(50px);
-  transition: transform 1000ms;
+  transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -745,7 +755,8 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transform: translateX(0);
   transform: translate(-50%, -50%);
-  transition: transform 1000ms;
+  transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 40px 40px;
 }
 
 .modal-close {
@@ -781,10 +792,46 @@ img {
   pointer-events: none;
 }
 
-label {
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  /* margin-top: 28px; */
+  padding-right: 15px;
+  padding-left: 42px;
+  outline: none;
+}
+
+.modal-form-comments {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  /* margin-top: 28px; */
+  padding: 12px 16px;
+  outline: none;
+}
+.modal-field {
+  margin-top: 10px;
+}
+
+.input-wrap {
+  position: relative;
+}
+.form-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* label {
   display: flex;
   flex-direction: column;
-}
+} */
 textarea {
   resize: none;
 }

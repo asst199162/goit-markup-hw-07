@@ -422,23 +422,60 @@
                 </svg>
             </button>
             <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
-            <label for="">
-                Имя
-                <input type="text">
-            </label>
-            <label for="">
-                Телефон
-                <input type="text" >
-            </label>
-            <label for="">
-                Почта
-                <input type="text">
-            </label>
-            <label for="">
-                Комментарий
-                <textarea name="" id="" placeholder="Введите текст">
-                </textarea>
-            </label>
+            <form action="#">
+                <div class="modal-field">
+                    <label for="name">Имя</label>
+                    <div class="input-wrap">
+                        <input type="text" 
+                        id="name"
+                        class="modal-form-input" 
+                        name="user-name"
+                        required>
+                        <svg class="form-icon size-icon">
+                            <use href="./images/icons.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="  modal-field">
+                    <label for="tel">Телефон</label>
+                    <div class="input-wrap">
+                        <input type="text" 
+                        class="modal-form-input"
+                        id="tel"
+                        type="tel" 
+                        name="user-tel"
+                        required>
+                        <svg class="form-icon size-icon">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="  modal-field">
+                    <label for="email">Почта</label>
+                    <div class="input-wrap">
+                        <input type="text" 
+                        id="email"
+                        type="email"
+                        class="modal-form-input" 
+                        name="user-mail"
+                        required>
+                        <svg class="form-icon size-icon">
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>  
+                    </div>                  
+                </div>
+                <div class="modal-field">
+                    <label for="comments">Комментарий</label>
+                    <textarea name=""
+                    id="comments"
+                    placeholder="Введите текст"
+                    class="modal-form-comments"></textarea>
+                </div>
+            <p>/* Соглашаюсь с рассылкой и принимаю Условия договора */</p>
+            <button type="submit">Отправить</button></form>
+
         </div>
     </div>
     <script src="./js/modal.js"></script>
