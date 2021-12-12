@@ -1,0 +1,41 @@
+.customers-title {
+  font-size: 36px;
+  color: var(--second-title-color);
+  line-height: 1.66;
+  text-align: center;
+}
+
+.close-icon,
+.customers-icon {
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 50px;
+}
+
+.customers-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: #afb1b8;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customers-item + .customers-item {
+  margin-left: 30px;
+}
+
+.customers-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,42 @@
+.peculiarities-hide,
+.portfolio-title-hide {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.peculiarities-list {
+  display: flex;
+}
+.peculiarities-item:not(:last-child) {
+  margin-right: 30px;
+}
+.peculiarities-item {
+  width: 270px;
+}
+
+.peculiarities-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--second-title-color);
+}
+.peculiarities-text {
+  margin-top: 10px;
+}
+
+.peculiarities-social {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}

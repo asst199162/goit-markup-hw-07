@@ -1,0 +1,141 @@
+.footer {
+  background-color: var(--background-hero-footer-color);
+  padding: 60px 0;
+}
+
+.footer-block {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-social-icon {
+  fill: #ffffff;
+}
+
+.footer-left-block {
+  flex-grow: 1;
+  margin-right: 70px;
+}
+
+.footer-right-block {
+  margin-right: 93px;
+}
+
+.footer-title-block {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 3%;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.footer-social-list {
+  display: flex;
+  margin-top: 20px;
+}
+
+.footer-social-item {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--studio-footer-logo-color);
+  display: block;
+}
+
+.footer-list {
+  margin-top: 20px;
+}
+
+.footer-item:not(:first-child) {
+  margin-top: 9px;
+}
+
+.footer-logo-span {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--web-logo-color);
+}
+
+.footer-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-link-color);
+}
+
+.footer-mail,
+.footer-tel {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-contacts-text-color);
+}
+
+.footer-mailing {
+  display: block;
+}
+
+.subscription-input {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: var(--hero-background-color);
+  outline: none;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscription-icon {
+  margin-left: 10px;
+}
+.subscription-btn {
+  justify-content: center;
+  width: 200px;
+  display: flex;
+  align-items: center;
+}
+.subscription-title {
+  text-transform: uppercase;
+  color: var(--main-title-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.footer-form {
+  margin-top: 20px;
+  display: flex;
+  align-items: self-end;
+  text-align: center;
+}
+
+.footer-tel:hover,
+.footer-tel:focus,
+.footer-mail:hover,
+.footer-mail:focus {
+  color: var(--hover-focus-color);
+}
