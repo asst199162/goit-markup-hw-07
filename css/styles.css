@@ -119,6 +119,109 @@ img {
 }
 
 /* --------------HEADER----------------------- */
+.site {
+  border: 1px solid #ececec;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+}
+
+.site-logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--studio-header-logo-color);
+  padding-bottom: 25px;
+  padding-top: 24px;
+  margin-right: 93px;
+}
+
+.navigation-container {
+  display: flex;
+  align-items: center;
+}
+
+.site-container {
+  display: flex;
+  align-items: center;
+}
+
+.site-logo-span {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--web-logo-color);
+}
+
+.site-nav-link {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--second-title-color);
+  position: relative;
+}
+
+.site-nav-list {
+  display: flex;
+}
+
+.site-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav-link.active::after {
+  content: '';
+  width: 100%;
+  height: 4px;
+  background-color: rgba(33, 150, 243, 1);
+  position: absolute;
+  display: block;
+  bottom: -1px;
+  left: 0;
+  border-radius: 2px;
+}
+
+.site-nav-link,
+.contacts-mail,
+.contacts-tel {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contacts-tel,
+.contacts-mail {
+  color: var(--header-contacts-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.contacts-item {
+  display: flex;
+}
+
+.contacts-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--header-contacts-text-color);
+  display: flex;
+  margin-left: auto;
+}
 
 /* ----------------------HOVER-FOCUS--------------------------- */
 
