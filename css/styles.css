@@ -930,6 +930,10 @@ img {
   transform: translateY(-50%);
 }
 
+.form-btn {
+  width: 200px;
+}
+
 .check-item {
   width: 16px;
   height: 15px;
@@ -943,8 +947,7 @@ img {
 
 .check-text {
   font-size: 14px;
-  line-height: 24px;
-  line-height: 1.46%;
+  line-height: 1.46em;
   display: flex;
   align-items: center;
 }
