@@ -2,7 +2,7 @@
   background-color: var(--background-commands-color);
 }
 
-.commands-title {
+.commands__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -10,7 +10,7 @@
   color: var(--second-title-color);
 }
 
-.commands-name {
+.commands-name__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -18,54 +18,54 @@
   color: var(--second-title-color);
 }
 
-.commands-list {
+.commands__list {
   display: flex;
   margin-top: 50px;
 }
 
-.commands-text {
+.commands-name__text {
   text-align: center;
   margin-top: 10px;
 }
 
-.commands-text-name {
+.commands-name {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.commands-item {
+.commands__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background: var(--background-item-commads);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
-.commands-item:not(:last-child) {
-  margin-right: 30px;
-}
+// .commands-item:not(:last-child) {
+//   margin-right: 30px;
+// }
 
-.commands-social-icon {
+.commands-name__icon {
   fill: #afb1b8;
 }
 
-.commads-social-list {
+.commands-name__list {
   display: flex;
   justify-content: center;
   margin-top: 16px;
 }
 
-.commands-social-item,
-.footer-social-item {
+.commands-name__item {
   width: 44px;
   height: 44px;
+  & + .commands-name__item {
+    margin-left: 10px;
+  }
 }
 
-.commands-social-item + .commands-social-item,
-.footer-social-item + .footer-social-item {
-  margin-left: 10px;
-}
-
-.commands-social-link {
+.commands-name__link {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -76,34 +76,11 @@
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.commands-social-link:hover,
-.commands-social-link:focus {
+.commands-name__link:hover,
+.commands-name__link:focus {
   background-color: #2196f3;
-}
-
-.commands-social-link:hover .commands-social-icon,
-.commands-social-link:focus .commands-social-icon {
-  fill: #ffffff;
-}
-
-.close-icon:hover,
-.close-icon:focus,
-.customers-icon:hover,
-.customers-icon:focus {
-  fill: #2196f3;
-}
-
-.modal-close:hover .close-icon,
-.modal-close:focus .close-icon,
-.customers-link:hover .customers-icon,
-.customers-link:focus .customers-icon {
-  fill: #2196f3;
-}
-
-.modal-close:hover,
-.modal-close:focus,
-.customers-item:hover,
-.customers-item:focus {
-  color: #2196f3;
-  border-color: #2196f3;
+  &:hover .commands-name__icon,
+  &:focus .commands-name__icon {
+    fill: #ffffff;
+  }
 }

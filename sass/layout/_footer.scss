@@ -3,69 +3,20 @@
   padding: 60px 0;
 }
 
-.footer-block {
-  display: flex;
-  align-items: baseline;
-}
-
-.footer-social-icon {
-  fill: #ffffff;
-}
-
-.footer-left-block {
+.footer-contacts {
   flex-grow: 1;
   margin-right: 70px;
 }
 
-.footer-right-block {
-  margin-right: 93px;
-}
-
-.footer-title-block {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 3%;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-.footer-social-list {
-  display: flex;
+.footer-contacts__list {
   margin-top: 20px;
 }
 
-.footer-social-item {
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.footer-logo {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--studio-footer-logo-color);
-  display: block;
-}
-
-.footer-list {
-  margin-top: 20px;
-}
-
-.footer-item:not(:first-child) {
+.footer-contacts__item:not(:first-child) {
   margin-top: 9px;
 }
 
-.footer-logo-span {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--web-logo-color);
-}
-
-.footer-link {
+.footer-contacts__link {
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
@@ -75,20 +26,86 @@
   color: var(--footer-link-color);
 }
 
-.footer-mail,
-.footer-tel {
+.footer-contacts__mail-tel {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-contacts-text-color);
+  &:hover,
+  &:focus {
+    color: var(--hover-focus-color);
+  }
+}
+
+.footer-social {
+  margin-right: 93px;
+}
+
+.footer-social__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 3%;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.footer-mailing__form {
+  margin-top: 20px;
+  display: flex;
+  align-items: self-end;
+  text-align: center;
+}
+
+.footer-social__list {
+  display: flex;
+  margin-top: 20px;
+}
+
+.footer-social__item {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  & + .footer-social__item {
+    margin-left: 10px;
+  }
+}
+
+.footer-social__icon {
+  fill: #ffffff;
+}
+
+.footer-social__link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+  }
 }
 
 .footer-mailing {
   display: block;
 }
 
-.subscription-input {
+.footer-mailing__title {
+  text-transform: uppercase;
+  color: var(--main-title-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.footer-mailing__input {
   width: 358px;
   height: 50px;
   padding: 15px 16px;
@@ -108,34 +125,47 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscription-icon {
-  margin-left: 10px;
-}
-.subscription-btn {
+.footer-mailing__btn {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--main-btn-color);
+  background: var(--background-btn-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
+  cursor: pointer;
+  border: transparent;
   justify-content: center;
   width: 200px;
   display: flex;
   align-items: center;
 }
-.subscription-title {
-  text-transform: uppercase;
-  color: var(--main-title-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
+
+.footer-mailing__icon {
+  margin-left: 10px;
 }
 
-.footer-form {
-  margin-top: 20px;
+.footer-block {
   display: flex;
-  align-items: self-end;
-  text-align: center;
+  align-items: baseline;
 }
 
-.footer-tel:hover,
-.footer-tel:focus,
-.footer-mail:hover,
-.footer-mail:focus {
-  color: var(--hover-focus-color);
+.footer-logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--studio-footer-logo-color);
+  display: block;
+}
+
+.footer-logo-span {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--web-logo-color);
 }
