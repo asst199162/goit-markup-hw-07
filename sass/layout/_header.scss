@@ -1,11 +1,18 @@
-.site {
+.header {
   border: 1px solid #ececec;
   border-top-style: none;
   border-right-style: none;
   border-left-style: none;
 }
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--web-logo-color);
+}
 
-.site-logo {
+.logo__dark {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -16,22 +23,14 @@
   margin-right: 93px;
 }
 
-.navigation {
+.header__container {
   display: flex;
   align-items: center;
 }
 
-// .site-container {
-//   display: flex;
-//   align-items: center;
-// }
-
-.site-logo-span {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--web-logo-color);
+.navigation {
+  display: flex;
+  align-items: center;
 }
 
 .navigation__link {
@@ -42,17 +41,23 @@
   letter-spacing: 0.02em;
   color: var(--second-title-color);
   position: relative;
+  &:hover,
+  &:focus {
+    color: var(--hover-focus-color);
+  }
 }
 
 .navigation__list {
   display: flex;
 }
 
-.navigation__item:not(:last-child) {
-  margin-right: 50px;
+.navigation__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
-.navigation__link.active::after {
+.navigation__link.navigation__link__active::after {
   content: '';
   width: 100%;
   height: 4px;
@@ -65,22 +70,20 @@
 }
 
 .navigation__link,
-.navigation-contacts__mail,
-.navigation-contacts__tel {
+.navigation-contacts__link {
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-.navigation-contacts__tel,
-.navigation-contacts__mail {
+.navigation-contacts__link {
   color: var(--header-contacts-text-color);
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.navigation-contacts__item:not(:last-child) {
-  margin-right: 50px;
+  &:hover,
+  &:focus {
+    color: var(--hover-focus-color);
+  }
 }
 
 .navigation-contacts__icon {
@@ -90,6 +93,9 @@
 
 .navigation-contacts__item {
   display: flex;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .navigation-contacts {
@@ -105,13 +111,4 @@
 .contacts-icon:hover,
 .contacts-icon:focus {
   fill: currentColor;
-}
-
-.navigation__link:hover,
-.navigation__link:focus,
-.navigation-contacts__tel:hover,
-.navigation-contacts__tel:focus,
-.navigation-contacts__mail:hover,
-.navigation-contacts__mail:focus {
-  color: var(--hover-focus-color);
 }
